@@ -1,0 +1,13 @@
+public class Solution {
+    public string solution(string phone_number) {
+        string answer = "";
+        char[] pn = phone_number.ToCharArray();
+        
+        for (int i = 0; i < pn.GetLength(0)-4; i++)
+        {
+            pn[i] = '*';
+        }
+        answer = string.Join("", pn);
+        return answer;
+    }
+}
