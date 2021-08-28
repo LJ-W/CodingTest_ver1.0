@@ -1,0 +1,16 @@
+using System;
+
+public class Solution {
+    public int solution(int n) {
+        int answer = 0;
+        String s = n.ToString();
+        int[] arr = new int[s.Length];
+        
+        for(int i = 0; i < s.Length; i++)
+        {
+            arr[i] = int.Parse(s[i].ToString());
+            answer += arr[i];
+        }
+        return answer;
+    }
+}
